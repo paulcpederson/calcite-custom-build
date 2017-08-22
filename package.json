@@ -1,0 +1,25 @@
+{
+  "name": "custombuilddan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "calcite-web": "github:Esri/calcite-web",
+    "http-server": "^0.10.0",
+    "node-sass": "^4.5.3",
+    "rollup": "^0.48.2",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "uglify-es": "^3.0.28"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "js": "rollup -c ./rollup.config.js",
+    "sass": "node-sass custom.scss -o ./",
+    "start": "http-server -p 7777 ./"
+  },
+  "author": "Paul C Pederson <paul.c.pederson@gmail.com> (http://paulcpederson.com/)",
+  "license": "ISC"
+}
